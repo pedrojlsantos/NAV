@@ -1,0 +1,40 @@
+OBJECT Table 50000 test table 001
+{
+  OBJECT-PROPERTIES
+  {
+    Date=06/08/18;
+    Time=10:23:14 AM;
+    Modified=Yes;
+    Version List=test3,test6,test7,test8,test9;
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;code                ;Code10        ;DataClassification=ToBeClassified }
+    { 2   ;   ;description         ;Text30        ;DataClassification=ToBeClassified }
+    { 3   ;   ;test3               ;Integer       ;DataClassification=ToBeClassified }
+    { 4   ;   ;test8               ;Integer       ;DataClassification=ToBeClassified }
+    { 5   ;   ;test9               ;Integer       ;DataClassification=ToBeClassified }
+  }
+  KEYS
+  {
+    {    ;code                                    ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    {
+      000000
+
+      this is a teste, a big fat test
+    }
+    END.
+  }
+}
+
