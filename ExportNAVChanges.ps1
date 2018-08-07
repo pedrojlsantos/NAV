@@ -16,5 +16,4 @@ Write-Host "Original path - $ExtensionsFolder"
 Export-ModifiedObjectsAsDeltas -containerName $containerName -deltaFolder $sourceFolder
 #Export-NavContainerObjects -containerName NAV2018-DEVT2 -objectsFolder $sourceFolder -exportTo "txt folder"
 
-Write-Host 'Copy changes to Github'
-#Copy-Item -Path "$sourceFolder\*" "C:\source\NAV-Test\NAV2018\Modified"
+Write-Host "************************ Start Export changes **************************" -ForegroundColor Green

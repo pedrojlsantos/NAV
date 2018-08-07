@@ -17,3 +17,5 @@ IF($LicenceFile -ne ""){
 
 write-host 'Import Changes to NAV DEV container'
 Import-DeltasToNavContainer -containerName $containerName -deltaFolder $sourceFolder -compile
+
+Write-Host "********************* Starting import of Deltas *************************" -ForegroundColor Green

@@ -45,3 +45,5 @@ ELSE{
     Write-Host "Copy $originalFolder to source $sourceFolder"
     Copy-Item -Path $sourceFolder -Destination $originalFolder
 }
+
+Write-Host "******************** Start exporting Originals ******************************" -ForegroundColor Green

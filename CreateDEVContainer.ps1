@@ -36,3 +36,4 @@ ELSE{
         -additionalParameters @("--volume ${sourceFolder}:${sourceFolder}") 
 }
 
+write-host "********************* Start Create NAV dev Container *************************" -ForegroundColor Green

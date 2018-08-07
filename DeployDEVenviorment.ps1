@@ -33,12 +33,19 @@ mkdir $sourceFolder -Force
 IF($DEVlicenceFile -ne ""){
     $licenseFileToUse = $DEVlicenceFile
 }
+else{
+    $licenseFileToUse = $licenseFile
+}
 
 
 $deltaFolder = Join-Path $sourceFolder "Modified"
 .\ImportDeltasToContainer.ps1 -containerName $containerName `
                               -sourceFolder $deltaFolder `
                               -LicenceFile $licenseFileToUse
+
+IF($baseDemoLicenceFile -ne ""){
+    Import-NavContainerLicense -containerName $containerName -licenseFile $baseDemoLicenceFile
+}
 
 
 Write-Host "******************** END deploy of DEV enviorment **************************" -ForegroundColor Green
